@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity implements
     public boolean onScroll(MotionEvent motionEvent, MotionEvent motionEvent1, float v, float v1) {
         scrolls++;
         scrollTextView.setText(String.valueOf(scrolls));
-        gesturesLogTextView.append("\nonScroll: distanceX is " + v + "distanceY is" + v1);
+        gesturesLogTextView.append("\nonScroll: distanceX is " + v + " distanceY is" + v1);
         return false;
     }
 
@@ -111,7 +111,7 @@ public class MainActivity extends AppCompatActivity implements
     public boolean onFling(MotionEvent motionEvent, MotionEvent motionEvent1, float v, float v1) {
         flings++;
         flingTextView.setText(String.valueOf(flings));
-        gesturesLogTextView.append("\nonFling: velocityX is " + v + "velocityY is" + v1);
+        gesturesLogTextView.append("\nonFling: velocityX is " + v + " velocityY is" + v1);
         return false;
     }
 
